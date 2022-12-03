@@ -29,6 +29,6 @@ app.get('/json/custom', async (req, res) => {
    res.send(await data.json());
 });
 
-app.listen(`0.0.0.0:${port}`, () => {
+app.listen(port, () => {
    console.log(`🪐 Server listening at http://localhost:${port} ✨`);
 });
